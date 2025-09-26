@@ -17,9 +17,8 @@ SECRET_KEY = 'django-insecure-+2lcqg994w5y2szity07_7$r7lg3y7m&p$1x+55xlk8$1gyb5m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-api_url = config('api_url')
 
-ALLOWED_HOSTS = ['127.0.0.1','bloomr-api.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1','bloomer-api.onrender.com']
 
 # Application definition
 
@@ -124,7 +123,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
-'''
 if not DEBUG:
     # Tell Django to copy static assets into a path called `staticfiles` (this is specific to Render)
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -132,8 +130,8 @@ if not DEBUG:
     # Enable the WhiteNoise storage backend, which compresses static files to reduce disk use
     # and renames the files with unique names for each version to support long-term caching
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-'''
-STATIC_URL = '/static/'
+
+#STATIC_URL = '/static/'
 #MEDIA_URL = 'media/'
 #MEDIA_ROOT = BASE_DIR / 'media'
 from decouple import config
