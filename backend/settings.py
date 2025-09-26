@@ -131,7 +131,7 @@ if not DEBUG:
     # and renames the files with unique names for each version to support long-term caching
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-#STATIC_URL = '/static/'
+STATIC_URL = '/static/'
 #MEDIA_URL = 'media/'
 #MEDIA_ROOT = BASE_DIR / 'media'
 from decouple import config
@@ -146,9 +146,10 @@ CLOUDINARY_CLOUD_NAME = config('CLOUDINARY_CLOUD_NAME')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # Your frontend
+    "http://localhost:5173",
+    'https://blooomr.netlify.app'# Your frontend
 ]
 AUTH_USER_MODEL = 'core.CustomUser'
 
