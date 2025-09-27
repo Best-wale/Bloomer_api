@@ -4,7 +4,7 @@
 
 ---
 
-## 📦 Table of Contents
+##  Table of Contents
 
 - [Features](#features)  
 - [Tech Stack](#tech-stack)  
@@ -21,7 +21,7 @@
 
 ---
 
-## 🔧 Features
+##  Features
 
 - RESTful API structure with Django REST Framework  
 - CRUD operations for models  
@@ -31,7 +31,7 @@
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 - **Backend**: Django, Django REST Framework  
 - **Database**: PostgreSQL (recommended)  
@@ -41,7 +41,7 @@
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
